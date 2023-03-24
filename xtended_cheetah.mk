@@ -9,6 +9,7 @@ $(call inherit-product, vendor/gms/gms_full.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
+include device/google/pantah/device-aosp.mk
 
 # Project-Xtended Xtras
 WITH_GMS := true
