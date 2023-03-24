@@ -8,6 +8,7 @@ $(call inherit-product, vendor/superior/config/common.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
+include device/google/pantah/device-aosp.mk
 
 # SuperiorOS Stuffz
 BUILD_WITH_GAPPS := true
