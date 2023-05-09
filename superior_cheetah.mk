@@ -1,6 +1,7 @@
 # Boot animation
 TARGET_SCREEN_HEIGHT := 3120
 TARGET_SCREEN_WIDTH := 1440
+TARGET_BOOT_ANIMATION_RES := 1440
 
 # Inherit some common SuperiorOS stuff.
 $(call inherit-product, vendor/superior/config/common.mk)
@@ -9,10 +10,11 @@ $(call inherit-product, vendor/superior/config/common.mk)
 $(call inherit-product, device/google/pantah/aosp_cheetah.mk)
 
 # SuperiorOS Stuffz
-WITH_GAPPS := true
+BUILD_WITH_GAPPS := true
 TARGET_FACE_UNLOCK_SUPPORTED := false
-EXTRA_UDFPS_ANIMATIONS := true
 TARGET_SUPPORTS_QUICK_TAP := true
+TARGET_INCLUDE_PIXEL_CHARGER := true
+TARGET_INCLUDE_NGA := true
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
