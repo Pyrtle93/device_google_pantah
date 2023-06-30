@@ -20,6 +20,7 @@ TARGET_INCLUDE_PIXEL_CHARGER := true
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 TARGET_INCLUDE_NGA := true
 TARGET_USE_GOOGLE_TELEPHONY := true
+INCLUDE_PIXEL_FRAMEWORK := true
 
 # Xtended Official Flags
 XTENDED_BUILD_TYPE := OFFICIAL
@@ -27,6 +28,7 @@ XTENDED_BUILD_MAINTAINER := Pyrtle93
 
 # Parts
 $(call inherit-product-if-exists, vendor/google/pixelparts/pixelparts.mk)
+$(call inherit-product-if-exists, vendor/google/pixelparts/powershare/device.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_NAME := xtended_cheetah
